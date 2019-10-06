@@ -5,8 +5,6 @@ import {MDBBtn, MDBCol} from 'mdbreact'
 const Bubble = ({text, color="elegant"}) => {
 
     var textArray = text.split(" ")
-    console.log(textArray);
-    
 
     return (
         <MDBCol sm={4} style={{display: 'flex', justifyContent: 'center', marginTop: 50}} >

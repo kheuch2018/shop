@@ -4,7 +4,6 @@ import { MDBRow} from 'mdbreact'
 import Hr from '../commons/Hr';
 import Bubbles from '../commons/Bubbles';
 import LastProducts from '../commons/LastProducts';
-import Footer from '../commons/Footer'
 
 class Home extends Component {
     render() {
