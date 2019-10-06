@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created by [Cheikh Seck](https://www.linkedin.com/in/cheikh-seck-40b3a514a).
 
 ## Available Scripts
 
