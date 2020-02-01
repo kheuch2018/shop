@@ -4,6 +4,7 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNav
 import { BrowserRouter as Router } from 'react-router-dom';
 import SideNav from './SideNav'
 import {NavLink} from "react-router-dom"
+import Modal from "./ModalLayout";
 
 class NavbarPage extends Component {
 state = {
@@ -15,6 +16,7 @@ toggleCollapse = () => {
 }
 
 render() {
+  const {toggle} = this.props;
   return (
     <Router>
         <SideNav/>
@@ -38,12 +40,14 @@ render() {
             
           </MDBNavbarNav>
           <MDBNavbarNav right>
-              <MDBNavItem>
-                <MDBNavLink className="black-text active" to="#!">Login</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink className="black-text" to="#!">Signup</MDBNavLink>
-              </MDBNavItem>
+         
+          <MDBNavItem>
+            <MDBNavLink className="black-text" onClick={() =>toggle("Login") } to="#" >Login</MDBNavLink>
+           </MDBNavItem>
+             
+           <MDBNavItem>
+             <MDBNavLink className="black-text" onClick={() =>toggle("Signup") } to="#" >Signup</MDBNavLink>
+           </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink className="waves-effect waves-light black-text" to="#!">
                 <MDBIcon fab icon="twitter" />

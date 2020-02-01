@@ -8,7 +8,7 @@ import pic3 from './pic3.jpg'
 
 const CarouselPage = () => {
   return (
-    <div>
+    <div >
       <MDBCarousel
       activeItem={1}
       length={3}
