@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Home from './components/Home';
-import AllProducts from './components/AllProducts';
+import Home from './containers/Home';
+import AllProducts from './containers/AllProducts';
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
-import Navbar from './commons/Navbar';
-import Footer from './commons/Footer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 class App extends Component {
  render(){

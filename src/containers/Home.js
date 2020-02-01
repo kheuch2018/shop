@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import Carousel from '../commons/Carousel';
+import Carousel from '../components/Carousel';
 import { MDBRow} from 'mdbreact'
-import Hr from '../commons/Hr';
-import Bubbles from '../commons/Bubbles';
-import LastProducts from '../commons/LastProducts';
+import Hr from '../components/Hr';
+import Bubbles from '../components/Bubbles';
+import LastProducts from '../components/LastProducts';
 
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div >
+            <Carousel/>
            
-                <MDBRow className="no-gutters">
-                <Carousel/>
+                <MDBRow className="">
 
                 <div className="container">
                     <Hr text="Our Categories" />

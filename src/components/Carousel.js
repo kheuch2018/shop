@@ -15,16 +15,16 @@ const CarouselPage = () => {
       showControls={true}
       showIndicators={true}
       className="z-depth-1"
+      style={{width:"100%"}}
       
     >
       <MDBCarouselInner >
-        <MDBCarouselItem itemId="1" >
-          <MDBView >
+        <MDBCarouselItem itemId="1">
+          <MDBView>
             <img
-              className="d-block w-100"
+              style={{width:'100%'}}
               src={pic1}
-              alt="First slide"
-              style={{width: "100%"}} 
+              alt="First slide" 
             />
           <MDBMask overlay="black-slight" />
           </MDBView>
